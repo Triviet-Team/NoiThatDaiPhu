@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Coffee
+    link(rel='stylesheet', href='../css/bootstrap.min.css')
+    link(rel='stylesheet', href='../css/mdb.min.css')
+    link(rel='stylesheet', href='../css/owl.carousel.min.css')
+    link(rel='stylesheet', href='../css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='../css/xzoom.css')
+    link(rel='stylesheet', href='../css/swiper.min.css')
+    link(rel='stylesheet', href='../css/magnific-popup.css')
+    link(rel='stylesheet', href='../css/animate.min.css')
+    link(rel='stylesheet', href='../css/jquery.fancybox.min.css')
+    link(rel='stylesheet', href='../css/materialdesignicons.min.css')
+    link(rel='stylesheet', href='../css/sweetalert2.min.css')
+    link(rel="stylesheet", href="../css/jquery-ui.min.css")
+    link(rel='stylesheet', href='../css/layout.css')
+    link(rel='shortcut icon', href='../img/favicon.png')
+  body
+    aside
+      .menu-close
+        i.mdi.mdi-close.d-block.d-xl-none
+
+      .logo
+        a(href='index.html')
+          img.logo-large(src="../img/logo.png")
+        img.logo-mini(src="../img/logo-mini.png")
+      .menu
+        nav#sidebar.sidebar
+          ul.nav
+            li.nav-item
+              a.nav-link(href='index.html', title='Trang chủ')
+                i.mdi.mdi-home-circle.menu-icon
+                span.menu-title Trang chủ
+            
+            li.nav-item
+              a.nav-link(href='gioi-thieu.html', title='Giới thiệu')
+                i.mdi.mdi-account-supervisor-circle.menu-icon
+                span.menu-title Giới thiệu
+
+            li.nav-item
+              a.nav-link(data-toggle='collapse', href='#product', aria-expanded='false', aria-controls='ui-basic', title='Sản phẩm')
+                i.mdi.mdi-coffee.menu-icon(aria-hidden='true')
+                span.menu-title Sản phẩm
+              i.mdi.mdi-chevron-down.menu-down(data-toggle='collapse', href='#product', aria-expanded='false', aria-controls='ui-basic')
+              #product.collapse
+                ul.nav.flex-column.sub-menu
+                  li.nav-item
+                    a.nav-link(href='san-pham.html') Cà phê trung nguyên
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê cao cấp
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê rang xay
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê phin
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê hòa tan
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê trung nguyên
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê cao cấp
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê rang xay
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê phin
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê hòa tan
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê trung nguyên
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê cao cấp
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê rang xay
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê phin
+                  li.nav-item
+                    a.nav-link(href='san-pham-1.html') Cà phê hòa tan
+            
+            li.nav-item
+              a.nav-link(href='tin-tuc.html', title='Tin tức')
+                i.mdi.mdi-newspaper.menu-icon
+                span.menu-title Tin tức
+
+            li.nav-item
+              a.nav-link(data-toggle='collapse', href='#term', aria-expanded='false', aria-controls='ui-basic', title='Điều khoản')
+                i.mdi.mdi-onenote.menu-icon(aria-hidden='true')
+                span.menu-title Điều khoản
+              i.mdi.mdi-chevron-down.menu-down(data-toggle='collapse', href='#term', aria-expanded='false', aria-controls='ui-basic')
+              #term.collapse
+                ul.nav.flex-column.sub-menu
+                  li.nav-item
+                    a.nav-link(href='dieu-khoan.html') Điều khoản sử dụng
+                  li.nav-item
+                    a.nav-link(href='dieu-khoan.html') Điều khoản mua hàng
+                  li.nav-item
+                    a.nav-link(href='dieu-khoan.html') Điều khoản bảo mật
+            
+            li.nav-item
+              a.nav-link(href='lien-he.html', title='Liên hệ')
+                i.mdi.mdi-send.menu-icon
+                span.menu-title Liên hệ
+
+    main
+      header
+        .container-fluid
+          .row
+            
+            .col-xl-6.col-lg-4.col-md-6.d-flex
+              .menu-btn
+                i.mdi.mdi-menu
+              .cart-btn
+                i.mdi.mdi-cart
+                span 10
+              .search
+                form
+                  input.form-control(type="text", placeholder="Nhập từ khóa")
+                  button
+                    i.mdi.mdi-magnify
+            .col-xl-6.col-lg-8.col-md-6.d-none.d-md-block
+              .contact
+                ul
+                  li
+                    a(href='#')
+                      i.mdi.mdi-map
+                      | Số 1, Phường 2, Quận 3, TP.HCM
+                  li
+                    a(href='#')
+                      i.mdi.mdi-phone-classic
+                      | 0912 345 678
+                      
+
+      article
+        .cart
+          .cart-header
+            .row
+              .col-2
+                i.mdi.mdi-close.cart-close(title='Đóng')
+              .col-8.text-center
+                h3 GIỎ HÀNG
+              .col-2.text-right
+                i.mdi.mdi-cart
+                span 10
+          .cart-body
+            .box-product-cart
+              img(src='../img/product-1.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 500.000 đ
+            
+            .box-product-cart
+              img(src='../img/product-2.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 500.000 đ
+            
+            .box-product-cart
+              img(src='../img/product-1.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 500.000 đ
+            
+            .box-product-cart
+              img(src='../img/product-2.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 500.000 đ
+            
+            .box-product-cart
+              img(src='../img/product-1.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 500.000 đ
+            
+            .box-product-cart
+              img(src='../img/product-2.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 500.000 đ
+            
+            .box-product-cart
+              img(src='../img/product-1.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 500.000 đ
+            
+            .box-product-cart
+              img(src='../img/product-2.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 500.000 đ
+            
+            .box-product-cart
+              img(src='../img/product-1.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 500.000 đ
+            
+            
+
+          .cart-footer.text-center
+            a(href="gio-hang.html") vào giỏ hàng
+            a(href="thanh-toan.html") thanh toán
+
+
+
+        .overlay-menu
+        .overlay
+
+        block main
+
+      footer
+        .container-fluid
+          .footer-top
+            .row
+              .col-lg-3.col-md-6
+                .info
+                  a(href='index.html')
+                    img(src='../img/logo.png')
+                  
+                  ul
+                    li 2593 Timbercrest Road, Chisana, Alaska Badalas United State
+                    li (+91)7-723-4608
+                    li Aurosfurniture@gmail.com
+                
+              .col-lg-2.col-md-3.d-none.d-md-block
+                .link
+                  h3 sản phẩm
+
+                  ul
+                    li
+                      a(href='san-pham.html') Cà phê cao cấp
+                    li
+                      a(href='san-pham.html') Cà phê hòa tan
+                    li
+                      a(href='san-pham.html') Cà phê pha phin
+                    li
+                      a(href='san-pham.html') Cà phê hạt rang nguyên chất
+                
+              .col-lg-2.col-md-3.d-none.d-md-block
+                .term
+                  h3 điều khoản
+
+                  ul
+                    li
+                      a(href='dieu-khoan.html') Bảo mật
+                    li
+                      a(href='dieu-khoan.html') Mua hàng
+                    li
+                      a(href='dieu-khoan.html') Thanh toán
+                    li
+                      a(href='dieu-khoan.html') Đổi trả
+                
+              .col-lg-5.d-none.d-lg-block
+                .partner
+                  h3 đối tác
+
+                  .owl-carousel.partner-carousel.owl-theme
+                    .item
+                      img(src='../img/partner-1.png')
+                    .item
+                      img(src='../img/partner-1.png')
+                    .item
+                      img(src='../img/partner-1.png')
+                    .item
+                      img(src='../img/partner-1.png')
+                    .item
+                      img(src='../img/partner-1.png')
+
+          .footer-bottom
+            .row
+              .col-md-8.text-center.text-md-left.mb-3.mb-md-0
+                h5 Copyright @ 2018 Dai Phat Loc. All Reserved. Designed by Tri Viet
+              .col-md-4.text-center.text-md-right
+                a(href='#')
+                  i.mdi.mdi-facebook
+                a(href='#')
+                  i.mdi.mdi-twitter
+                a(href='#')
+                  i.mdi.mdi-skype
+                a(href='#')
+                  i.mdi.mdi-youtube
+
+              
+
+                  
+
+      script(src='../js/jquery-3.3.1.min.js')
+      script(src='../js/jquery.touchSwipe.min.js')
+      script(src='../js/jquery.slideandswipe.min.js')
+      script(src='../js/bootstrap.min.js')
+      script(src='../js/mdb.min.js')
+      script(src='../js/owl.carousel.min.js')
+      script(src='../js/wow.min.js')
+      script(src='../js/xzoom.min.js')
+      script(src='../js/swiper.min.js')
+      script(src='../js/magnific-popup.js')
+      script(src='../js/jquery.fancybox.min.js')
+      script(src='../js/sweetalert2.min.js')
+      script(src='../js/jquery-ui.min.js')
+      script(src='../js/layout.js')
