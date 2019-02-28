@@ -4,13 +4,12 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Coffee
+    title Nội thất Đại Phú
     link(rel='stylesheet', href='../css/bootstrap.min.css')
     link(rel='stylesheet', href='../css/mdb.min.css')
     link(rel='stylesheet', href='../css/owl.carousel.min.css')
     link(rel='stylesheet', href='../css/owl.theme.default.min.css')
     link(rel='stylesheet', href='../css/xzoom.css')
-    link(rel='stylesheet', href='../css/swiper.min.css')
     link(rel='stylesheet', href='../css/magnific-popup.css')
     link(rel='stylesheet', href='../css/animate.min.css')
     link(rel='stylesheet', href='../css/jquery.fancybox.min.css')
@@ -20,119 +19,102 @@ html(lang="en")
     link(rel='stylesheet', href='../css/layout.css')
     link(rel='shortcut icon', href='../img/favicon.png')
   body
-    aside
-      .menu-close
-        i.mdi.mdi-close.d-block.d-xl-none
+    .go-top.wow.zoomInRight(title='Lên đầu trang', data-wow-duration='2s')
+      span
+      span
 
-      .logo
-        a(href='index.html')
-          img.logo-large(src="../img/logo.png")
-        img.logo-mini(src="../img/logo-mini.png")
-      .menu
-        nav#sidebar.sidebar
-          ul.nav
-            li.nav-item
-              a.nav-link(href='index.html', title='Trang chủ')
-                i.mdi.mdi-home-circle.menu-icon
-                span.menu-title Trang chủ
-            
-            li.nav-item
-              a.nav-link(href='gioi-thieu.html', title='Giới thiệu')
-                i.mdi.mdi-account-supervisor-circle.menu-icon
-                span.menu-title Giới thiệu
-
-            li.nav-item
-              a.nav-link(data-toggle='collapse', href='#product', aria-expanded='false', aria-controls='ui-basic', title='Sản phẩm')
-                i.mdi.mdi-coffee.menu-icon(aria-hidden='true')
-                span.menu-title Sản phẩm
-              i.mdi.mdi-chevron-down.menu-down(data-toggle='collapse', href='#product', aria-expanded='false', aria-controls='ui-basic')
-              #product.collapse
-                ul.nav.flex-column.sub-menu
-                  li.nav-item
-                    a.nav-link(href='san-pham.html') Cà phê trung nguyên
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê cao cấp
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê rang xay
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê phin
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê hòa tan
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê trung nguyên
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê cao cấp
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê rang xay
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê phin
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê hòa tan
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê trung nguyên
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê cao cấp
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê rang xay
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê phin
-                  li.nav-item
-                    a.nav-link(href='san-pham-1.html') Cà phê hòa tan
-            
-            li.nav-item
-              a.nav-link(href='tin-tuc.html', title='Tin tức')
-                i.mdi.mdi-newspaper.menu-icon
-                span.menu-title Tin tức
-
-            li.nav-item
-              a.nav-link(data-toggle='collapse', href='#term', aria-expanded='false', aria-controls='ui-basic', title='Điều khoản')
-                i.mdi.mdi-onenote.menu-icon(aria-hidden='true')
-                span.menu-title Điều khoản
-              i.mdi.mdi-chevron-down.menu-down(data-toggle='collapse', href='#term', aria-expanded='false', aria-controls='ui-basic')
-              #term.collapse
-                ul.nav.flex-column.sub-menu
-                  li.nav-item
-                    a.nav-link(href='dieu-khoan.html') Điều khoản sử dụng
-                  li.nav-item
-                    a.nav-link(href='dieu-khoan.html') Điều khoản mua hàng
-                  li.nav-item
-                    a.nav-link(href='dieu-khoan.html') Điều khoản bảo mật
-            
-            li.nav-item
-              a.nav-link(href='lien-he.html', title='Liên hệ')
-                i.mdi.mdi-send.menu-icon
-                span.menu-title Liên hệ
-
-    main
+    block header
       header
-        .container-fluid
-          .row
+        section.header-top
+          .container
+            .logo
+              a(href='index.html')
+                img(src='../img/logo.png')
             
-            .col-xl-6.col-lg-4.col-md-6.d-flex
-              .menu-btn
-                i.mdi.mdi-menu
-              .cart-btn
-                i.mdi.mdi-cart
-                span 10
-              .search
-                form
-                  input.form-control(type="text", placeholder="Nhập từ khóa")
-                  button
-                    i.mdi.mdi-magnify
-            .col-xl-6.col-lg-8.col-md-6.d-none.d-md-block
-              .contact
+            .search
+              form
+                input.form-control(type='text', placeholder='Nhập từ khóa . . .')
+                select.form-control
+                  option(value="") Cánh cửa gỗ
+                  option(value="") Bàn ghế gỗ phòng khách
+                button
+                  i.mdi.mdi-magnify
+            
+            .contact.text-right
+              .box-contact
+                span 028.6296.0894 - 0962.37.55.79
+                i.mdi.mdi-phone-classic
+              .box-contact
+                span info@triviet.net
+                i.mdi.mdi-email-variant
+              .box-contact
+                span 311K13 Đường 8, KP1, P. An Phú, Quận 2, TP.HCM
+                i.mdi.mdi-map-marker-radius
+              
+        section.menu.wow
+          .container
+            .sidebar
+              .category-btn
+                a.btn.btn-light(data-toggle='collapse', href='#sidebar', aria-expanded='false', aria-controls='sidebar')
+                  | danh mục sản phẩm
+                  i.mdi.mdi-view-list
+              #sidebar.collapse.show.category
                 ul
                   li
-                    a(href='#')
-                      i.mdi.mdi-map
-                      | Số 1, Phường 2, Quận 3, TP.HCM
+                    a(href='san-pham.html') Cánh cửa gỗ
                   li
-                    a(href='#')
-                      i.mdi.mdi-phone-classic
-                      | 0912 345 678
-                      
+                    a(href='san-pham.html') Bàn ghế gỗ phòng khách
+                  li
+                    a(href='san-pham.html') Giường ngủ
+                  li
+                    a(href='san-pham.html') Tủ bếp
+                  li
+                    a(href='san-pham.html') Bàn ăn
+                  li
+                    a(href='san-pham.html') Tủ thờ
+                  li
+                    a(href='san-pham.html') 
+                      | Xem tất cả
+                      i.mdi.mdi-arrow-right
 
-      article
+
+            .right
+              .main-menu
+                a.toggleMenu
+                  i.mdi.mdi-menu
+                a.search-btn.d-block.d-md-none
+                  i.mdi.mdi-magnify
+                a.cart-btn(title='Nhấn để xem giỏ hàng')
+                  i.mdi.mdi-cart
+                  span 10
+
+                ul.nav
+                  .nav-close
+                    i.mdi.mdi-close.d-block.d-lg-none
+                  li.nav-item
+                    a(href='index.html') Trang chủ
+                  li.nav-item
+                    a(href='gioi-thieu.html') Giới thiệu
+                  li.nav-item
+                    a(href='cong-trinh.html') Công trình
+                  li.nav-item
+                    a(href='tin-tuc.html') Tin tức
+                  li.nav-item
+                    a(href='lien-he.html') Liên hệ
+
+              .slider
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    a(href='san-pham.html')
+                      img(src='../img/slider-1.png')
+                  .item
+                    a(href='san-pham.html')
+                      img(src='../img/slider-1.png')
+                  .item
+                    a(href='san-pham.html')
+                      img(src='../img/slider-1.png')
+                
+
         .cart
           .cart-header
             .row
@@ -153,7 +135,7 @@ html(lang="en")
                   button.waves-effect.waves-light -
                   input(type='number', value='1', min='1')
                   button.waves-effect.waves-light +
-                h4 500.000 đ
+                h4 Giá: Liên hệ
             
             .box-product-cart
               img(src='../img/product-2.png')
@@ -164,7 +146,7 @@ html(lang="en")
                   button.waves-effect.waves-light -
                   input(type='number', value='1', min='1')
                   button.waves-effect.waves-light +
-                h4 500.000 đ
+                h4 Giá: Liên hệ
             
             .box-product-cart
               img(src='../img/product-1.png')
@@ -175,7 +157,7 @@ html(lang="en")
                   button.waves-effect.waves-light -
                   input(type='number', value='1', min='1')
                   button.waves-effect.waves-light +
-                h4 500.000 đ
+                h4 Giá: Liên hệ
             
             .box-product-cart
               img(src='../img/product-2.png')
@@ -186,7 +168,7 @@ html(lang="en")
                   button.waves-effect.waves-light -
                   input(type='number', value='1', min='1')
                   button.waves-effect.waves-light +
-                h4 500.000 đ
+                h4 Giá: Liên hệ
             
             .box-product-cart
               img(src='../img/product-1.png')
@@ -197,18 +179,7 @@ html(lang="en")
                   button.waves-effect.waves-light -
                   input(type='number', value='1', min='1')
                   button.waves-effect.waves-light +
-                h4 500.000 đ
-            
-            .box-product-cart
-              img(src='../img/product-2.png')
-              .box-product-cart-detail
-                h5
-                  a(href="chi-tiet-san-pham.html") Mèo thần tài
-                .quantity
-                  button.waves-effect.waves-light -
-                  input(type='number', value='1', min='1')
-                  button.waves-effect.waves-light +
-                h4 500.000 đ
+                h4 Giá: Liên hệ
             
             .box-product-cart
               img(src='../img/product-1.png')
@@ -219,18 +190,7 @@ html(lang="en")
                   button.waves-effect.waves-light -
                   input(type='number', value='1', min='1')
                   button.waves-effect.waves-light +
-                h4 500.000 đ
-            
-            .box-product-cart
-              img(src='../img/product-2.png')
-              .box-product-cart-detail
-                h5
-                  a(href="chi-tiet-san-pham.html") Mèo thần tài
-                .quantity
-                  button.waves-effect.waves-light -
-                  input(type='number', value='1', min='1')
-                  button.waves-effect.waves-light +
-                h4 500.000 đ
+                h4 Giá: Liên hệ
             
             .box-product-cart
               img(src='../img/product-1.png')
@@ -241,7 +201,29 @@ html(lang="en")
                   button.waves-effect.waves-light -
                   input(type='number', value='1', min='1')
                   button.waves-effect.waves-light +
-                h4 500.000 đ
+                h4 Giá: Liên hệ
+            
+            .box-product-cart
+              img(src='../img/product-1.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 Giá: Liên hệ
+            
+            .box-product-cart
+              img(src='../img/product-1.png')
+              .box-product-cart-detail
+                h5
+                  a(href="chi-tiet-san-pham.html") Mèo thần tài
+                .quantity
+                  button.waves-effect.waves-light -
+                  input(type='number', value='1', min='1')
+                  button.waves-effect.waves-light +
+                h4 Giá: Liên hệ
             
             
 
@@ -249,98 +231,80 @@ html(lang="en")
             a(href="gio-hang.html") vào giỏ hàng
             a(href="thanh-toan.html") thanh toán
 
-
-
         .overlay-menu
         .overlay
 
-        block main
+        
 
-      footer
-        .container-fluid
-          .footer-top
+    block article
+    
+    block footer
+      section.footer
+        .container
+          .contact
+            .box-contact.name.d-block.d-md-none
+              h2 Nội thất gỗ cao cấp Đại Phú
+            .box-contact.address
+              i.mdi.mdi-map-marker-radius
+              h5 311 K13 Đường 8, Khu phố 1, Phường An Phú, Quận 2, Tp. Hồ Chí Minh
+            .box-contact.phone
+              i.mdi.mdi-phone-classic
+              h5 028.6296.0894 - 0962.37.55.79
+            .box-contact.email
+              i.mdi.mdi-email-variant
+              h5 info@triviet.net
+            
+          .right.d-none.d-md-block
             .row
-              .col-lg-3.col-md-6
+              .col-xl-6.col-lg-5
                 .info
-                  a(href='index.html')
-                    img(src='../img/logo.png')
-                  
-                  ul
-                    li 2593 Timbercrest Road, Chisana, Alaska Badalas United State
-                    li (+91)7-723-4608
-                    li Aurosfurniture@gmail.com
-                
-              .col-lg-2.col-md-3.d-none.d-md-block
+                  h4 thông tin công ty
+                  h5 NỘI THẤT GỖ CAO CẤP ĐẠI PHÚ
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Vel maxime ut reiciendis quos! Officia perspiciatis nostrum hic repudiandae cupiditate iste? Fugit expedita necessitatibus veniam molestias officiis provident laudantium?
+              .col-xl-3.col-lg-3.d-none.d-lg-block
                 .link
-                  h3 sản phẩm
-
+                  h4 liên kết
                   ul
                     li
-                      a(href='san-pham.html') Cà phê cao cấp
+                      a(href='index.html') Trang chủ
                     li
-                      a(href='san-pham.html') Cà phê hòa tan
+                      a(href='gioi-thieu.html') Giới thiệu
                     li
-                      a(href='san-pham.html') Cà phê pha phin
+                      a(href='cong-trinh.html') Công trình
                     li
-                      a(href='san-pham.html') Cà phê hạt rang nguyên chất
-                
-              .col-lg-2.col-md-3.d-none.d-md-block
-                .term
-                  h3 điều khoản
-
+                      a(href='tin-tuc.html') Tin tức
+                    li
+                      a(href='lien-he.html') Liên hệ
+              .col-xl-3.col-lg-4.d-none.d-lg-block
+                .cate-bot
+                  h4 danh mục
                   ul
                     li
-                      a(href='dieu-khoan.html') Bảo mật
+                      a(href='san-pham.html') Cánh cửa gỗ
                     li
-                      a(href='dieu-khoan.html') Mua hàng
+                      a(href='san-pham.html') Bàn ghế gỗ phòng khách
                     li
-                      a(href='dieu-khoan.html') Thanh toán
+                      a(href='san-pham.html') Giường ngủ
                     li
-                      a(href='dieu-khoan.html') Đổi trả
-                
-              .col-lg-5.d-none.d-lg-block
-                .partner
-                  h3 đối tác
+                      a(href='san-pham.html') Tủ bếp
+                    li
+                      a(href='san-pham.html') Bàn ăn
+                    li
+                      a(href='san-pham.html') Tủ thờ
+                    
+            .copyright
+              h5 Copyright @ 2018 Noi that go cao cap Dai Phu. All Reserved. Designed by Tri Viet        
+                    
+                    
+                    
 
-                  .owl-carousel.partner-carousel.owl-theme
-                    .item
-                      img(src='../img/partner-1.png')
-                    .item
-                      img(src='../img/partner-1.png')
-                    .item
-                      img(src='../img/partner-1.png')
-                    .item
-                      img(src='../img/partner-1.png')
-                    .item
-                      img(src='../img/partner-1.png')
-
-          .footer-bottom
-            .row
-              .col-md-8.text-center.text-md-left.mb-3.mb-md-0
-                h5 Copyright @ 2018 Dai Phat Loc. All Reserved. Designed by Tri Viet
-              .col-md-4.text-center.text-md-right
-                a(href='#')
-                  i.mdi.mdi-facebook
-                a(href='#')
-                  i.mdi.mdi-twitter
-                a(href='#')
-                  i.mdi.mdi-skype
-                a(href='#')
-                  i.mdi.mdi-youtube
-
-              
-
-                  
 
       script(src='../js/jquery-3.3.1.min.js')
-      script(src='../js/jquery.touchSwipe.min.js')
-      script(src='../js/jquery.slideandswipe.min.js')
       script(src='../js/bootstrap.min.js')
       script(src='../js/mdb.min.js')
       script(src='../js/owl.carousel.min.js')
       script(src='../js/wow.min.js')
       script(src='../js/xzoom.min.js')
-      script(src='../js/swiper.min.js')
       script(src='../js/magnific-popup.js')
       script(src='../js/jquery.fancybox.min.js')
       script(src='../js/sweetalert2.min.js')

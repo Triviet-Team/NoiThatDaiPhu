@@ -1,0 +1,397 @@
+extends _inc
+
+
+block article
+  article
+    section.bread-crumb
+      .container
+        .bc-icons
+          nav(aria-label='breadcrumb')
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='index.html') Trang chủ
+              li.breadcrumb-item
+                a(href='san-pham.html') Sản phẩm
+              li.breadcrumb-item.active Bộ bàn ghế phòng khách
+
+    section.product-page
+      .container
+        .left
+          .left-in
+            .filter-close.d-block.d-xl-none
+              i.mdi.mdi-close
+
+            .filter-color
+              h3 Lọc theo màu
+
+              label.check-box
+                | Màu đỏ
+                input(type='checkbox', checked='checked')
+                span.checkmark(style='background: red')
+              label.check-box
+                | Màu vàng
+                input(type='checkbox')
+                span.checkmark(style='background: yellow')
+              label.check-box
+                | Màu xanh lá cây
+                input(type='checkbox')
+                span.checkmark(style='background: green')
+              label.check-box
+                | Màu hồng
+                input(type='checkbox')
+                span.checkmark(style='background: pink')
+              label.check-box
+                | Màu cam
+                input(type='checkbox')
+                span.checkmark(style='background: orange')
+              label.check-box
+                | Màu đen
+                input(type='checkbox')
+                span.checkmark(style='background: black')
+            
+            .filter-done 
+              | Lọc sản phẩm
+              
+            .seller-product
+              h3 sản phẩm bán chạy
+
+              .box-product-seller
+                .box-product-seller-img
+                  a(href='chi-tiet-san-pham.html', title='Nhấn để chi xem tiết')
+                    img(src='../img/product-1.png')
+                .box-product-seller-detail
+                  h6 MSP: MSP: ABC - 123
+                  h5
+                    a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                      | Cánh cửa gỗ ABC - 123
+                  p Giá: Liên hệ
+              
+              .box-product-seller
+                .box-product-seller-img
+                  a(href='chi-tiet-san-pham.html', title='Nhấn để chi xem tiết')
+                    img(src='../img/product-2.png')
+                .box-product-seller-detail
+                  h6 MSP: MSP: ABC - 123
+                  h5
+                    a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                      | Cánh cửa gỗ ABC - 123
+                  p Giá: Liên hệ
+              
+              .box-product-seller
+                .box-product-seller-img
+                  a(href='chi-tiet-san-pham.html', title='Nhấn để chi xem tiết')
+                    img(src='../img/product-2.png')
+                .box-product-seller-detail
+                  h6 MSP: MSP: ABC - 123
+                  h5
+                    a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                      | Cánh cửa gỗ ABC - 123
+                  p Giá: Liên hệ
+              
+              .box-product-seller
+                .box-product-seller-img
+                  a(href='chi-tiet-san-pham.html', title='Nhấn để chi xem tiết')
+                    img(src='../img/product-1.png')
+                .box-product-seller-detail
+                  h6 MSP: MSP: ABC - 123
+                  h5
+                    a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                      | Cánh cửa gỗ ABC - 123
+                  p Giá: Liên hệ
+              
+              .box-product-seller
+                .box-product-seller-img
+                  a(href='chi-tiet-san-pham.html', title='Nhấn để chi xem tiết')
+                    img(src='../img/product-1.png')
+                .box-product-seller-detail
+                  h6 MSP: MSP: ABC - 123
+                  h5
+                    a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                      | Cánh cửa gỗ ABC - 123
+                  p Giá: Liên hệ
+
+          .banner-left
+            a(href='chi-tiet-san-pham.html')
+              img(src='../img/banner-product.png')    
+              
+        .main
+          h2 bộ bàn ghế phòng khách
+
+          .filter-btn.d-block.d-xl-none
+            i.mdi.mdi-filter
+            | Lọc sản phẩm
+
+          .main-custom
+            .type.d-none.d-md-block
+              span Kiểu xem:
+              i.mdi.mdi-view-grid.type-grid.active
+              i.mdi.mdi-view-list.type-list
+
+            .sort
+              span.d-none.d-md-inline-block Sắp xếp:
+              select.form-control
+                option(value="") Sản phẩm mới nhất
+                option(value="") Sản phẩm bán chạy nhất
+                option(value="") Tên từ A đến Z
+                option(value="") Tên từ Z đến A
+
+            .view
+              | Hiển thị:
+              select.form-control
+                option(value="") 8
+                option(value="", selected) 12
+                option(value="") 24
+                option(value="") 32
+              span.d-none.d-xl-inline-block Sản phẩm
+
+        
+          .main-product
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-1.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-2.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-1.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-2.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-2.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-1.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-2.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-1.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-2.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-2.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-1.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+            .box-product
+              .box-product-status
+                span mới
+              .box-product-img
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                    i.mdi.mdi-eye-plus
+                  a.custom-cart(title='Xem vào giỏ')
+                    i.mdi.mdi-cart
+                a(href='chi-tiet-san-pham.html')
+                  img(src='../img/product-1.png')
+              .box-product-detail
+                h6 MSP: ABC - 123
+                h5
+                  a(href='chi-tiet-san-pham.html', title='Cánh cửa gỗ ABC - 123')
+                    | Cánh cửa gỗ ABC - 123
+                h4 Giá: Liên hệ
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime velit facere, neque voluptatibus magnam magni expedita nemo maiores delectus natus facilis quo quisquam fugiat voluptatum molestiae numquam sequi eveniet harum?
+
+          .main-paging
+            nav
+              ul.pagination.justify-content-end
+                li.page-item
+                  a.page-link(href='#', aria-label='Previous')
+                    span(aria-hidden='true') «
+                    span.sr-only Previous
+                li.page-item
+                  a.page-link.active(href='#') 1
+                li.page-item
+                  a.page-link(href='#') 2
+                li.page-item
+                  a.page-link(href='#') 3
+                li.page-item
+                  a.page-link(href='#', aria-label='Next')
+                    span(aria-hidden='true') »
+                    span.sr-only Next
+
+            
+          
+
