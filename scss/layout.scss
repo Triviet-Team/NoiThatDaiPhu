@@ -168,7 +168,12 @@ $main_color: #B5592A;
     z-index: 1000;
 
     .slider {
-      display: none;
+      height: 0;
+      margin: 0;
+
+      .owl-item, .owl-nav {
+        display: none;
+      }
     }
 
     .main-menu {
@@ -843,9 +848,13 @@ $main_color: #B5592A;
     position: relative;
 
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-weight: bold;
       text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 20px;
     }
 
     .main-custom {

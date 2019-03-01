@@ -100,7 +100,7 @@ body .go-top {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 40px;
   transform: translateY(100px);
 }
 body .go-top:hover {
@@ -953,6 +953,45 @@ body .ui-widget.ui-widget-content {
   margin-top: 30px;
 }
 
+.hotline-everywhere {
+  position: fixed;
+  bottom: 75px;
+  right: 15px;
+  width: 180px;
+  height: 40px;
+  background: #B5592A;
+  color: white;
+  z-index: 10000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.hotline-everywhere.down {
+  width: 40px;
+}
+.hotline-everywhere.down i {
+  padding-right: 0;
+}
+.hotline-everywhere.down span {
+  display: none;
+}
+.hotline-everywhere:hover {
+  width: 180px;
+}
+.hotline-everywhere:hover i {
+  padding-right: 10px;
+}
+.hotline-everywhere:hover span {
+  display: inline-block;
+}
+.hotline-everywhere i {
+  padding-right: 10px;
+}
+
 .header-top .container {
   display: grid;
   grid-template-columns: 300px calc(100% - 560px) 200px;
@@ -1071,6 +1110,10 @@ body .ui-widget.ui-widget-content {
   z-index: 1000;
 }
 .menu.down .slider {
+  height: 0;
+  margin: 0;
+}
+.menu.down .slider .owl-item, .menu.down .slider .owl-nav {
   display: none;
 }
 .menu.down .main-menu {
@@ -1636,9 +1679,12 @@ body .ui-widget.ui-widget-content {
   position: relative;
 }
 .product-page .main h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.product-page .main p {
+  margin-bottom: 20px;
 }
 .product-page .main .main-custom {
   display: grid;

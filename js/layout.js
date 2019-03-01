@@ -8,6 +8,8 @@ $('.slider-carousel').owlCarousel({
   items: 1,
   center:true,
   autoHeight: true,
+  animateOut: 'fadeOut',
+  animateIn: 'fadeIn',
   navText: [
     "<i class='mdi mdi-chevron-left'></i>", 
     "<i class='mdi mdi-chevron-right'></i>"
@@ -131,15 +133,17 @@ $(document).ready(() => {
     if (iCurScrollPos < iScrollPos) {
       $('.go-top')
         .fadeIn()
-        .css('transform','translateY(0)');
-      
+        .css('transform','scale(1)');
+
+      $('.hotline-everywhere').removeClass('down');
     } else {
       $('.go-top')
         .fadeOut()
-        .css('transform','translateY(100px)');
+        .css('transform','scale(0)');
       $('.cart').removeClass('cart-out');
       $('.overlay').removeClass('overlay-in');
       $('.header-top').removeClass('down');
+      $('.hotline-everywhere').addClass('down');
     }
     iScrollPos = iCurScrollPos;
   });

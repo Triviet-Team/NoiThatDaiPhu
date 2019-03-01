@@ -150,7 +150,7 @@ body {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 40px;
   transform: translateY(100px);
 
   &:hover {
@@ -1210,5 +1210,51 @@ body {
       border-top: 1px solid #595959;
       margin-top: 30px;
     }
+  }
+}
+
+.hotline-everywhere {
+  position: fixed;
+  bottom: 75px;
+  right: 15px;
+  width: 180px;
+  height: 40px;
+  background: $main_color;
+  color: white;
+  z-index: 10000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: .3s;
+  overflow: hidden;
+
+  &.down {
+    width: 40px;
+
+    i {
+      padding-right: 0;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  &:hover {
+    width: 180px;
+
+    i {
+      padding-right: 10px;
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  i {
+    padding-right: 10px;
   }
 }
